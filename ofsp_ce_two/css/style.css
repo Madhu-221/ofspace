@@ -212,6 +212,12 @@ h4 {
 .explore-top-section{ 
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.explore-content img {
+    position: absolute;
+    top: -46%;
+    left: 12%;
 }
 .explore-content {
     width: 28%;
@@ -228,6 +234,7 @@ section.explore-section {
     background: #f4f8fd;
     padding: 110px 0px;
     position: relative;
+    z-index: -1;
 }
 .explore-bottom-section{
 margin: 20px 0px 0px 70px;
@@ -267,7 +274,7 @@ span.box-content-size {
     content: " ";
     width: 70%;
     height: 100%;
-    z-index: 0;
+    z-index: -1;
     height: 100%;
     background-color: #eff1fd;
 }
@@ -283,6 +290,14 @@ span.box-content-size {
 section.exiting-client-review-section {
     padding: 100px 0px;
     background: #f4f8fd;
+    position: relative;;
+}
+img.wave-icon {
+    position: absolute;
+    top: -10%;
+    left: 0px;
+    z-index: 0;
+    width: 25%;
 }
 .existing-clent-review-main {
     justify-content: space-between;
@@ -325,15 +340,46 @@ section.rating-section {
 }
 /****Testimonial****/
 section.testimonial-section {
-    padding: 120px 0px;
+    padding: 150px 0px 200px 0px;
     background: #f4f8fd;
     background-image: url(../images/Testimonial-lines.png);
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size: contain;
 }
 .testimonial-section h2{
     text-align: center;
     padding: 0px 380px;
+}
+.testimonial-review-box {
+    padding: 25px;
+    background: #fff;
+    margin: 0px 9px;
+    border-radius: 15px;
+}
+span.client-quote {
+    margin: 12px 0px;
+    display: inline-block;
+    line-height: 20px;
+}
+.testi-review-header {
+    align-items: center;
+}
+.test-client-heading {
+    padding-left: 20px;
+}
+.test-client-heading h4{
+    font-size: 24px;
+    line-height: 28px;
+}
+p.client-designation {
+    line-height: 20px;
+    padding-bottom: 0px !important;
+}
+.testimonial-review-box p {
+    padding-bottom: 40px;
+}
+.testimonial-box {
+    padding-top: 50px;
 }
 
 /*****Footer Start****/
@@ -343,6 +389,7 @@ footer {
     background-image: url(../images/wave-shape-light.png);
     background-repeat: no-repeat;
     background-position: bottom left;
+    position: relative;
 }
 .footer-logo, .footer-menu-colums {
     width: 50%;
@@ -389,4 +436,9 @@ ul.footer-menu {
     font-size: 12px;
     line-height: 14px;
     color: rgba(38, 57, 89, 0.65);
+}
+img.footer-dots-image {
+    position: absolute;
+    right: 1%;
+    top: -9%;
 }
