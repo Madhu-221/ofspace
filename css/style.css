@@ -751,3 +751,39 @@ ul.footer-menu li a {
     padding-bottom: 35px;
 }
 }
+@media (min-width:300px) and (max-width:767px) {
+  .container{
+    width: 92%;
+  }
+  .complaince:before {
+   display: none;
+}
+.home-banner-main {
+    flex-direction: column;
+}
+.home-banner-content, .developer-design-image {
+    width: 100%;
+}
+h1 {
+    font-size: 34px;
+    line-height: 42px;
+}
+span.res-color {
+    color: #13a9a2;
+}
+img.banner-green-circle {
+    position: absolute;
+    right: 45.5%;
+    top: 9%;
+    width: 23.5%;
+}
+.home-banner-content p {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 0px 10px 0px;
+}
+a.btn {
+    padding: 11px 22px;
+    font-size: 13px;
+}
+}
