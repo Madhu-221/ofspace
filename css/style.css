@@ -75,7 +75,7 @@ li.nav-btn {
 section.home-banner-section {
     background: url(../images/Home-banner-image.svg);
     background-size: cover;
-    margin-top: -98px;
+    margin-top: -110px;
 }
 .home-banner-content, .developer-design-image {
     width: 51%;
@@ -474,7 +474,34 @@ ul.terms-policy li a {
     margin: 8px 0px !important;
   }
 
+  #hamburger-icon div {
+    width: 24px;
+    height: 2px;
+    background-color: #1F2148;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  #hamburger-icon .bar2{
+    width: 18px;
+    margin-left: 5px;
+  }
   
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-3px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  .mobile-menu li a:hover {
+    color: #0d0d0d;
+  }
 /****Responsive****/
 
 @media (min-width:992px) and (max-width:1199px) {
@@ -584,6 +611,12 @@ h1 {
 img.banner-green-circle {
     right: 41%;
     top: 13%;
+}
+.navbar-items{
+    display: none !important;
+}
+#hamburger-icon{
+    display: block;
 }
 a.btn {
     padding: 11px 22px;
