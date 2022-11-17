@@ -355,6 +355,10 @@ section.home-testimonial-section {
     display: flex !important;
     align-items: end !important;
   }
+  .testimonial-content.slick-slide.slick-active {
+    padding: 30px 20px;
+    width: 14% !important;
+  }
   
 /****Testimonial End***/
 footer {
@@ -666,6 +670,25 @@ h2 {
     width: 17%;
     padding-bottom: 15px;
 }
+.testimonial-content.slick-slide.slick-current.slick-active {
+    padding: 25px 15px;
+    width: 260px !important;
+  }
+  .testimonial-content.slick-slide.slick-current.slick-active p{
+    font-size:10px;
+    line-height:15px;
+    }
+    .testimonial-content.slick-slide.slick-current.slick-active .testimonial-footer p{
+        font-size:23px;
+        }
+        .testimonial-content.slick-slide.slick-current.slick-active h4 {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        .testimonial-content.slick-slide.slick-active {
+            padding: 30px 20px;
+            width: 210px !important;
+          }
 h3 {
     font-size: 16px;
     line-height: 24px;
@@ -843,7 +866,9 @@ ul.footer-menu li a {
   .container{
     width: 90%;
   }
-  
+  header {
+    padding: 20px 0px;
+}
   #hamburger-icon {
     display: block;
   }
@@ -879,7 +904,7 @@ img.banner-green-circle {
     width: 80%;
   }
 .home-banner-main {
-    padding: 100px 0px 0px 0px;
+    padding: 130px 0px 0px 0px;
   }
   .mobile-menu li a {
     font-size: 14px;
@@ -1035,11 +1060,27 @@ section.home-testimonial-section {
     top: 48%;
 }
 .testimonial-bottom-content {
-   flex-direction: column;
+   flex-direction: column !important;
     padding-top: 40px;
     align-items: center;
 
 }
+.testimonial-content.slick-slide.slick-current.slick-active p {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .testimonial-content.slick-slide.slick-current.slick-active {
+    padding: 20px 10px;
+    width: 15% !important;
+    box-shadow: 42px 27px 22px 0px #0000000b;
+  }
+.testimonial-content.slick-slide.slick-current.slick-active h4 {
+    font-size: 12px;
+    line-height: 18px;
+}
+.testimonial-content.slick-slide.slick-current.slick-active .testimonial-footer p {
+    font-size: 16px;
+  }
 .testi-one, .testi-two, .testi-three {
     width: 80%;
 
