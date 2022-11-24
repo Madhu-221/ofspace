@@ -1,0 +1,444 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/Circular-Std/CircularStd-medium.eot');
+    src: url('../fonts/Circular-Std/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circular-Std/CircularStd-Medium.woff2') format('woff2'),
+        url('../fonts/Circular-Std/CircularStd-Medium.woff') format('woff'),
+        url('../fonts/Circular-Std/CircularStd-Medium.ttf') format('truetype'),
+        url('../fonts/Circular-Std/CircularStd-Medium.svg#CircularStd-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina/NeueMachina-Light.eot');
+    src: url('../fonts/NeueMachina/NeueMachina-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeueMachina/NeueMachina-Light.woff2') format('woff2'),
+        url('../fonts/NeueMachina/NeueMachina-Light.woff') format('woff'),
+        url('../fonts/NeueMachina/NeueMachina-Light.ttf') format('truetype'),
+        url('../fonts/NeueMachina/NeueMachina-Light.svg#NeueMachina-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina/NeueMachina-Regular.eot');
+    src: url('../fonts/NeueMachina/NeueMachina-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeueMachina/NeueMachina-Regular.woff2') format('woff2'),
+        url('../fonts/NeueMachina/NeueMachina-Regular.woff') format('woff'),
+        url('../fonts/NeueMachina/NeueMachina-Regular.ttf') format('truetype'),
+        url('../fonts/NeueMachina/NeueMachina-Regular.svg#NeueMachina-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina/NeueMachina-Ultrabold.eot');
+    src: url('../fonts/NeueMachina/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeueMachina/NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('../fonts/NeueMachina/NeueMachina-Ultrabold.woff') format('woff'),
+        url('../fonts/NeueMachina/NeueMachina-Ultrabold.ttf') format('truetype'),
+        url('../fonts/NeueMachina/NeueMachina-Ultrabold.svg#NeueMachina-Ultrabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Circular Std';
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Circular Std';
+    font-size: 16px;
+    color: #263959;
+}
+img{
+    max-width: 100%;
+}
+p{
+    font-size: 16px;
+    font-family: 'Circular Std';
+    font-weight: 400;
+    color: rgba(38, 57, 89, 0.65);
+    line-height: 23px;
+}
+.d-flex{
+display: flex;
+}
+
+/***Header****/
+header {
+    padding: 30px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-header {
+    align-items: center;
+    justify-content: space-between;
+}
+ul.nav-menu li a {
+    color: #fff;
+    margin: 0px 16px;
+    font-weight: 300 !important;
+}
+li.nav-btn a {
+    padding: 17px 20px;
+    background: rgba(255, 255, 255, 0.19);
+}
+
+/***Header End****/
+
+/*****Banner Start****/
+.home-banner {
+    background-image: url(../images/Banner-background.jpg);
+    background-size: cover;
+    padding: 200px 0 0;
+    min-height: 100vh;
+    background-position: bottom right;
+}
+h1 {
+    font-size: 64px;
+    color: #fff;
+    font-family: 'Neue Machina';
+    line-height: 82px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+.banner-content {
+    width: 55%;
+}
+a.btn {
+    padding: 23px 51px;
+    background: #3EE8B5;
+    border-radius: 7px;
+    display: inline-block;
+}
+/*****Banner Start End****/
+
+/*****Logo Gallery Start****/
+section.logo-gallery {
+    padding: 100px 0px;
+    background: #f4f8fd;
+}
+.main-logo-gallery {
+    justify-content: space-between;
+    align-items: center;
+}
+/*****Logo Gallery End****/
+
+/*****features-section Start****/
+
+section.features-section {
+    background: #f4f8fd;
+    padding-bottom: 100px;
+}
+.our-main-features {
+    justify-content: space-between;
+    align-items: center;
+}
+.features-img, .features-content {
+    width: 50%;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 58px;
+    font-family: 'Neue Machina';
+    font-weight: 800;
+    color: #263959;
+   
+}
+.features-content h2{
+    padding-right: 40px;
+}
+
+h3 {
+    font-family: 'Circular Std';
+    font-size: 24px;
+    line-height: 29px;
+    color: #263959;
+    font-weight: 900;
+}
+
+.features-box {
+    padding-top: 25px;
+}
+
+.features-content-box {
+    padding-right: 23px;
+    width: 50%;
+}
+
+.features-content-box p{
+    color:  rgba(38, 57, 89, 0.65);
+    line-height: 23px;
+    padding: 8px 25px 0px 0px;
+
+}
+.line-img img {
+    position: absolute;
+    right: -62.7%;
+    top: 20%;
+}
+.features-content {
+    position: relative;
+}
+/*****features-section End****/
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Circular Std';
+    color:rgba(38, 57, 89, 1)
+}
+
+.explore-top-section{ 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.explore-content img {
+    position: absolute;
+    top: -46%;
+    left: 12%;
+}
+.explore-content {
+    width: 28%;
+}
+.explore-img-box {
+    padding: 56px 46px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    width: 24%;
+    margin: 0px 10px;
+}
+section.explore-section {
+    background: #f4f8fd;
+    padding: 110px 0px;
+    position: relative;
+    z-index: -1;
+}
+.explore-bottom-section{
+margin: 20px 0px 0px 70px;
+
+}
+.explore-img-box img {
+    margin-bottom: 20px;
+}
+.explore-bottom-section>.explore-img-box {
+    width: 25%;
+}
+.explore-content p{
+    padding-top: 16px;
+}
+.img-blue-box h4 {
+    font-weight: 400;
+    color: #fff;
+    display: inline;
+}
+.img-blue-box {
+    background-color: #263959;
+    text-align: left;
+
+}
+.img-blue-box img{
+    margin-top: 15px;
+}
+span.box-content-size {
+    font-size: 31.5px;
+    color: #fff;
+    line-height: 37px;
+}
+.explore-section:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: " ";
+    width: 70%;
+    height: 100%;
+    z-index: -1;
+    height: 100%;
+    background-color: #eff1fd;
+}
+.test {
+    z-index: 1;
+}
+
+/***client-review Start***/
+.client-review-content {
+    width: 46%;
+    padding-right: 60px;
+}
+section.exiting-client-review-section {
+    padding: 100px 0px;
+    background: #f4f8fd;
+    position: relative;;
+}
+img.wave-icon {
+    position: absolute;
+    top: -10%;
+    left: 0px;
+    z-index: 0;
+    width: 25%;
+}
+.existing-clent-review-main {
+    justify-content: space-between;
+    align-items: center;
+}
+.client-review-image{
+    width: 54%;
+}
+.client-review-content p {
+    padding: 20px 0px;
+}
+.client-review-content a.btn {
+    margin-top: 10px;
+}
+/***Rating section Start***/
+section.rating-section {
+    background: #263959;
+    padding: 100px 0px;
+    background-image: url(../images/Rating-lines.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+.heading-white {
+    color: #fff;
+}
+.rating-image {
+    padding-right: 40px;
+}
+.rating-content {
+    width: 42%;
+    padding:40px 0px 0px 40px
+}
+.rating-content p {
+    color: rgba(255, 255, 255, 0.65);
+    padding: 20px 0px;
+}
+.rating-content  a.btn {
+    margin-top: 10px;
+}
+/****Testimonial****/
+section.testimonial-section {
+    padding: 150px 0px 200px 0px;
+    background: #f4f8fd;
+    background-image: url(../images/Testimonial-lines.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.testimonial-section h2{
+    text-align: center;
+    padding: 0px 380px;
+}
+.testimonial-review-box {
+    padding: 25px;
+    background: #fff;
+    margin: 0px 9px;
+    border-radius: 15px;
+}
+span.client-quote {
+    margin: 12px 0px;
+    display: inline-block;
+    line-height: 20px;
+}
+.testi-review-header {
+    align-items: center;
+}
+.test-client-heading {
+    padding-left: 20px;
+}
+.test-client-heading h4{
+    font-size: 24px;
+    line-height: 28px;
+}
+p.client-designation {
+    line-height: 20px;
+    padding-bottom: 0px !important;
+}
+.testimonial-review-box p {
+    padding-bottom: 40px;
+}
+.testimonial-box {
+    padding-top: 50px;
+}
+
+/*****Footer Start****/
+footer {
+    padding: 110px 0px 35px 0px;
+    background: #EFF1FD;
+    background-image: url(../images/wave-shape-light.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: relative;
+}
+.footer-logo, .footer-menu-colums {
+    width: 50%;
+}
+.footer-main-section, .footer-menu-colums  {
+    justify-content: space-between;
+}
+.social-icons {
+    padding: 40px 0px 0px 0px;
+}
+.social-icons i {
+    color: #263959;
+    background: #fff;
+    padding: 18px;
+    margin: 0px 9px;
+    border-radius: 50px;
+    box-shadow: 0px 12px 30px 0px rgb(0 0 0 / 8%);
+}
+.social-icons i:hover {
+    background: #263959;
+    color: #fff;
+}
+.footer-menu-main h4{
+    font-weight: 500;
+}
+ul.footer-menu li a {
+    color: rgba(38, 57, 89, 0.65);
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400 !important;
+}
+ul.footer-menu {
+    padding-top: 8px;
+}
+.footer-main-section {
+    padding-bottom: 100px;
+}
+.footer-bottom {
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.11);
+    padding-top: 35px;
+}
+.footer-bottom p, .footer-bottom a{
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(38, 57, 89, 0.65);
+}
+img.footer-dots-image {
+    position: absolute;
+    right: 1%;
+    top: -9%;
+}
