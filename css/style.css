@@ -55,7 +55,7 @@ ul.navbar-items li {
     line-height: 24px;
     color: #313131;
 }
-li.nav-btn {
+li.nav-btn a {
     border: 1px solid #00000042;
     padding: 6px 26px !important;
     border-radius: 50px;
@@ -63,6 +63,14 @@ li.nav-btn {
 #hamburger-icon {
     display: none;
 }
+ul.navbar-items .nav-btn a:hover {
+    background: #13aaa1;
+    color: #fff;
+    border-color: #13aaa1;
+  }
+  .navbar ul li a:hover {
+    color: #13aaa1;
+  }
 /******Header End*****/
 
 /******Bannner section Start *****/
@@ -119,6 +127,12 @@ img.banner-green-circle {
     top: 16%;
     width: 25.5%;
 }
+.banner-image {
+    width: 49%;
+  }
+  .banner-image img {
+    margin-bottom: -4px;
+  }
 /******Bannner section End *****/
 
 /******Icon-box section Start *****/
@@ -207,7 +221,7 @@ ul.icon-list li i {
 /*** Call to action section start ***/
 .home-call-to-action-section {
     padding: 140px 0px;
-    background-image: url(../images/Call-to-action-bg.svg);
+    background-image: url(../images/Call-to-actionBg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -215,6 +229,7 @@ ul.icon-list li i {
 .call-to-action {
     text-align: center;
     padding: 45px 280px 0px 280px;
+    position: relative;
 }
 span.green-text.green-size:before {
     content: url(../images/call-to-action-green-circle.png);
@@ -231,8 +246,25 @@ span.green-text.green-size:before {
     line-height: 30px;
     margin-bottom: 60px;
 }
-
-
+.camera-icon {
+    position: absolute;
+    left: 0px;
+    top: -90px;
+  }
+  .message-icon {
+    position: absolute;
+    top: -14%;
+    right: 0%;
+  }
+  .En-icon {
+    position: absolute;
+    left: 5%;
+  }
+  .notepad-icon {
+    position: absolute;
+    right: 2%;
+  }
+/* complaince */
 .complaince {
     padding-left: 0px;
     padding-right: 130px;
@@ -283,11 +315,9 @@ section.home-testimonial-section {
 .testimonial-text p {
     padding-left: 45px;
 }
-.testimonial-bottom-content {
-    display: flex;
-    align-items: flex-end;
-    padding-top: 70px;
-}
+.slick-track {
+    padding: 70px 0px;
+  }
 .testimonial-content {
     background: #fff;
     margin: 0px 10px;
@@ -331,11 +361,6 @@ section.home-testimonial-section {
 .testimonial-footer p {
     padding-top: 35px;
 }
-.testimonial-content.slick-slide.slick-current.slick-active {
-    padding: 40px 50px;
-    box-shadow: 80px 50px 40px 0px #0000000f;
-    width: 20% !important;
-  }
   .testimonial-content.slick-slide.slick-current.slick-active h4{
   font-size: 20px;
   line-height: 30px;
@@ -354,10 +379,6 @@ section.home-testimonial-section {
   .slick-track {
     display: flex !important;
     align-items: end !important;
-  }
-  .testimonial-content.slick-slide.slick-active {
-    padding: 30px 20px;
-    width: 14% !important;
   }
   
 /****Testimonial End***/
@@ -506,6 +527,15 @@ ul.terms-policy li a {
   .mobile-menu li a:hover {
     color: #0d0d0d;
   }
+  input:focus {
+    outline: none;
+  }
+  .footer-menu li a:hover {
+    color: #13aaa1;
+  }
+  .terms-policy li a:hover {
+    color: #13aaa1;
+  }
 /****Responsive****/
 
 @media (min-width:992px) and (max-width:1199px) {
@@ -548,6 +578,18 @@ ul.terms-policy li a {
     .home-call-to-action-section {
         padding: 80px 0px;
     }
+    .camera-icon, .message-icon, .En-icon, .notepad-icon {
+        width: 15%;
+      }
+      .En-icon {
+        bottom: -36%;
+      }
+      .notepad-icon {
+        bottom: -40%;
+      }
+      .camera-icon {
+        top: -15%;
+      }
     .call-to-action {
         padding: 45px 190px 0px 190px;
     }
@@ -670,9 +712,12 @@ h2 {
     width: 17%;
     padding-bottom: 15px;
 }
+.camera-icon, .message-icon, .En-icon,  .notepad-icon {
+    width: 15%;
+}
 .testimonial-content.slick-slide.slick-current.slick-active {
     padding: 25px 15px;
-    width: 260px !important;
+    width: 360px !important;
   }
   .testimonial-content.slick-slide.slick-current.slick-active p{
     font-size:10px;
@@ -735,8 +780,11 @@ img.banner-black-arrow {
     padding: 15px 20px 0px 20px;
 }
 .home-call-to-action-section {
-    padding: 90px 0px;
+    padding: 65px 0px;
 }
+.camera-icon {
+    top: -20%;
+  }
 .green-size {
     font-size: 32px !important;
 }
@@ -1009,8 +1057,17 @@ span.green-text.green-size:before {
     top: 30%;
     right: 30.5%;
 }
+.camera-icon, .message-icon, .En-icon, .notepad-icon {
+    width: 30%;
+  }
+  .En-icon, .notepad-icon {
+    bottom: -70%;
+  }
+  .camera-icon, .message-icon {
+   top: 80%;
+  }
 .home-call-to-action-section {
-    background-image: url(../images/Call-to-action-bg-mob.png);
+    background-image: url(../images/Call-to-actionBg.jpg);
     padding: 40px 0px 150px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1052,6 +1109,9 @@ section.home-testimonial-section {
 .testimonial-text p {
     padding-left: 0px;
     padding-top: 15px;
+}
+.slick-next, .slick-prev{
+    display: none !important;
 }
 .testimonial-top-content img.banner-black-arrow {
     left: -9%;
