@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </head>
     
@@ -24,7 +26,7 @@
                     <ul class="navbar-items">
                         <li> <a href="#">Home</a> </li>
                         <li><a href="#">Pricing</a></li>
-                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">API Docs</li></a>
                         <li class="nav-btn"><a href="#">Login</a></li>
                         <li><a href="#">Sign Up</a></li>
                     </ul>
@@ -57,12 +59,12 @@
                     <p>
                      Method allows developers to make bank transfers, move money, and pay debts on behalf of their users all through a single API
                     </p>
-                    <a href="#" class="btn">Get Started</a>
+                    <a href="#" data-aos="fade-up" class="btn">Get Started</a>
                     <img src="./images/Black-arrow.svg" class="banner-black-arrow" alt="" >
 
                 </div>
                 <div class="banner-image">
-                    <img src="./images/Home-mobile-image.svg" alt="">
+                    <img src="./images/Mobile-banner.png" alt="">
                 </div>
 
             </div>
@@ -72,7 +74,7 @@
     <section class="home-icon-box-section">
         <div class="container">
             <h2>Build Today Launch Tomorrow</h2>
-            <div class="home-icon-box-main">
+            <div class="home-icon-box-main" data-aos="fade-up">
                 <div class="launch-icon-box">
                     <img src="./images/User-icon-svg.svg" alt="">
                     <h3>Create a User</h3>
@@ -104,7 +106,7 @@
         <div class="container">
             <div class="developer-design-main">
                 <div class="developer-design-image">
-                    <img src="./images/Man-with-laptop.png" alt="man-with-laptop">
+                    <img src="./images/Man-with-laptop.png" data-aos="zoom-in-up" alt="man-with-laptop">
                     <img src="./images/Blue-arrow-icon.svg" class="banner-black-arrow" alt="Blue-arrow-icon">
                 </div>
                 <div class="developer-design-content">
@@ -126,7 +128,11 @@
             <div class="call-to-action">
                 <h2>What Will You <span class="green-text green-size">Build? </span></h2>
                 <p>Method handles compliance requirements, identity verificatication, and bank partnerships so you can focus on building.</p>
-                <a href="#" class="btn">Get Started</a>
+                <a href="#" data-aos="fade-down" class="btn">Get Started</a>
+                <img src="./images/Camera-icon.svg" class="camera-icon" alt="">
+                <img src="./images/Mesaage-icon.svg" class="message-icon" alt="">
+                <img src="./images/En-icon.svg" class="En-icon" alt="">
+                <img src="./images/Notepad-icon.svg" class="notepad-icon" alt="">
             </div>
         </div>
     </section>
@@ -152,7 +158,7 @@
 
                 </div>
                 <div class="developer-design-image">
-                    <img src="./images/Paymenth-method-image.svg" alt="man-with-laptop">
+                    <img src="./images/Paymenth-method-image.svg"  data-aos="zoom-in-up" alt="man-with-laptop">
                 </div>
             </div>
         </div>
@@ -218,7 +224,6 @@
                         <p>Olivia Sacks</p>
                     </div>
                 </div>
-
                 <div class="testimonial-content testi-one">
                     <div class="testimonial-header">
                         <div class="testi-client-img">
@@ -233,36 +238,6 @@
                     integrate a rid provide a full experience to our users.</p>
                     <div class="testimonial-footer testi-footer-one">
                         <p>Jose Bethancourt</p>
-                    </div>
-                </div>
-                <div class="testimonial-content testi-two">
-                    <div class="testimonial-header">
-                        <div class="testi-client-img">
-                            <img src="./images/Kevin-Griffiths-img.svg" alt="">
-                        </div>
-                        <div class="testi-client-detail">
-                            <h4>Kevin Griffiths </h4>
-                            <p>Founder</p>
-                        </div>
-                    </div>
-                    <p>we had to send checks to pay our users' credit cards. Method has improved our user experience.</p>
-                    <div class="testimonial-footer testi-footer-two">
-                        <p>Kevin Griffiths</p>
-                    </div>
-                </div>
-                <div class="testimonial-content testi-three">
-                    <div class="testimonial-header">
-                        <div class="testi-client-img">
-                            <img src="./images/Olivia-Sacks-img.svg" alt="">
-                        </div>
-                        <div class="testi-client-detail">
-                            <h4>Olivia Sacks </h4>
-                            <p>VP @ Global Benefits Co</p>
-                        </div>
-                    </div>
-                    <p>Our financial wellness offering lacked the ability to easily move money on behalf of our users.</p>
-                    <div class="testimonial-footer testi-footer-three">
-                        <p>Olivia Sacks</p>
                     </div>
                 </div>
             </div>
@@ -333,29 +308,27 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-            $('.slider').slick({
-  dots: false,
+$('.slider').slick({
+  dots: true,
   infinite: false,
-  autoplay:true,
-  arrow:true,
   speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         infinite: true,
-        dots: false
+        dots: true
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
     },
     {
@@ -373,5 +346,8 @@
 function toggleMobileMenu(menu) {
       menu.classList.toggle('open');
   }
+  AOS.init({
+  duration: 1900,
+})
         </script>    
 </html>
