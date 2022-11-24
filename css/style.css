@@ -361,10 +361,6 @@ section.home-testimonial-section {
 .testimonial-footer p {
     padding-top: 35px;
 }
-.testimonial-content.slick-slide {
-    padding: 40px 50px;
-    box-shadow: 80px 50px 40px 0px #0000000f;
-  }
   .testimonial-content.slick-slide.slick-current.slick-active h4{
   font-size: 20px;
   line-height: 30px;
@@ -383,9 +379,6 @@ section.home-testimonial-section {
   .slick-track {
     display: flex !important;
     align-items: end !important;
-  }
-  .testimonial-content.slick-slide.slick-active {
-    padding: 30px 20px;
   }
   
 /****Testimonial End***/
