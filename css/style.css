@@ -1134,7 +1134,7 @@ section.home-testimonial-section {
 }
 .slick-slide  {
     min-height: auto !important;
-    width: 300px !important;
+    width: 90% !important;
    }
 .slick-next, .slick-prev{
     display: none !important;
